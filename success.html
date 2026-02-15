@@ -27,34 +27,32 @@
         }
         body{
             background-image: url(successimg.jfif);
-            background-size: cover;
+            background-size: 1200px 1000px;
             background-position: center;
             background-repeat: no-repeat;
-            background-attachment: fixed;
-            min-width: 90vh;
-            height: 400px;
+            
         }
         .nav{
-            color: white;
+            color: black;
         }
         .celebrate-box{
     position: relative;
-}
+        }
 
-.confetti-container{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    pointer-events: none;
-}
+        .confetti-container{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            pointer-events: none;
+       }
 
 .confetti{
-    position: absolute;
-    width: 8px;
-    height: 15px;
-    opacity: 0;
-}
+            position: absolute;
+            width: 8px;
+            height: 15px;
+            opacity: 0;
+      }
 
 .c1{ left: -20px; background: red;}
 .c2{ left: 0px; background: yellow;}
@@ -62,7 +60,7 @@
 
 .celebrate-box:hover .confetti{
     animation: burst 0.8s ease-out forwards;
-}
+     }
 
 @keyframes burst{
     0%{
@@ -73,7 +71,7 @@
         transform: translateY(-120px) rotate(360deg);
         opacity: 0;
     }
-}
+     }
 
     </style>
 </head>
@@ -97,8 +95,8 @@
     </nav>
     <div style="height: 5px;"></div>
     <div class="container my-5">
-        <h2 class="text-center mb-4 text-white">Success Your Order</h2>
-        <p class="text-center mb-4 text-white">your order has been successfully placed. we have received your order and it will be dlivered shortly.</p>
+        <h2 class="text-center mb-4 text-black">Success Your Order</h2>
+        <p class="text-center mb-4 text-black">your order has been successfully placed. we have received your order and it will be dlivered shortly.</p>
     <div class="container min-vh-100 d-flex align-items-center justify-content-center">
         <div class="col-lg-5 col-md-5">
             <div class="card success-card shadow-sm p-4">

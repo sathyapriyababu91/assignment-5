@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="food restaurant">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Success your order</title>
+    <style>
+        .success-card{
+            border-radius: 16px;
+            border: none;
+        }
+        .info-box{
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .label{
+            font-size: 14px;
+            color: #6c757d;
+        }
+
+        .value{
+            font-weight: 600;
+        }
+        body{
+            background-image: url(successimg.jfif);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-width: 90vh;
+            height: 400px;
+        }
+        .nav{
+            color: white;
+        }
+        .celebrate-box{
+    position: relative;
+}
+
+.confetti-container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.confetti{
+    position: absolute;
+    width: 8px;
+    height: 15px;
+    opacity: 0;
+}
+
+.c1{ left: -20px; background: red;}
+.c2{ left: 0px; background: yellow;}
+.c3{ left: 20px; background: blue;}
+
+.celebrate-box:hover .confetti{
+    animation: burst 0.8s ease-out forwards;
+}
+
+@keyframes burst{
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-120px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">Tasty food corner</a>
+            <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="booking.html">Book your order</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="success.html">Success food order</a>
+                  </li>
+                  </ul>
+        </div>
+            
+    </nav>
+    <div style="height: 5px;"></div>
+    <div class="container my-5">
+        <h2 class="text-center mb-4 text-white">Success Your Order</h2>
+        <p class="text-center mb-4 text-white">your order has been successfully placed. we have received your order and it will be dlivered shortly.</p>
+    <div class="container min-vh-100 d-flex align-items-center justify-content-center">
+        <div class="col-lg-5 col-md-5">
+            <div class="card success-card shadow-sm p-4">
+                <h3 class="fw-bold">Booking Confirmed</h3>
+                <p class="text-muted mb-4">Your order has been booked successfully.</p>
+
+                <div class="info-box text-start mb-4">
+                    <div class="d-flex gap-2 align-items-center justify-content-center mb-2">
+                        <span class="label">Order</span>
+                        <span class="value">Tasty food corner</span>
+                    </div>
+                </div>
+
+                <div class="d-grid celebrate-box position-relative text-center">
+                    <a class="btn btn-success btn-lg" href="index.html">Go to Home 🎉</a>
+                    <div class="confetti-container">
+                    <span class="confetti c1"></span>
+                    <span class="confetti c2"></span>
+                    <span class="confetti c3"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html> 
